@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+	<style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+		<item name="android:colorBackground">@color/hosting_app_color</item>
+		<item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/white</item>
+
+		<item name="colorPrimary">@color/white</item>
+
+		<item name="colorSurface">@color/hosting_app_color</item>
+
+		<!-- buttons -->
+		<item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+
+		<!-- bottom sheets -->
+		<item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+
+		<item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+		<item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
+		<item name="materialButtonStyle">@style/Widget.App.Button</item>
+	</style>
+
+	<style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+		<item name="android:minHeight">56dp</item>
+	</style>
+
+	<style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+		<item name="android:minHeight">56dp</item>
+	</style>
+
+	<style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+		<item name="android:minHeight">56dp</item>
+	</style>
+
+	<style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">16dp</item>
+	</style>
+
+	<style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+		<item name="cornerFamily">rounded</item>
+		<item name="cornerSize">16dp</item>
+	</style>
+
+</resources>

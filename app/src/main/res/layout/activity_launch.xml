@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/title1"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginEnd="24dp"
+		android:text="Welcome to"
+		android:textColor="@color/white"
+		android:textSize="28sp"
+		app:layout_constraintBottom_toTopOf="@id/title2"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_chainStyle="packed" />
+
+	<TextView
+		android:id="@+id/title2"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginEnd="24dp"
+		android:text="Demo Hosting App"
+		android:textColor="@color/white"
+		android:textSize="28sp"
+		android:textStyle="bold"
+		app:layout_constraintBottom_toTopOf="@id/text"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/title1" />
+
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="24dp"
+		android:text="The Demo Hosting app is an example application for the integration of the OpenPay Plugin.\n\nThis screen is part of the Demo Hosting App, please use the button below to start the OpenPay Plug-in."
+		android:textColor="@color/white"
+		android:textSize="22sp"
+		app:layout_constraintBottom_toTopOf="@id/btn_launch"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/title2" />
+
+	<Button
+		android:id="@+id/btn_launch"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="24dp"
+		android:layout_marginEnd="24dp"
+		android:layout_marginBottom="36dp"
+		android:text="START OPENPAY PLUG-IN"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

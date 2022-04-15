@@ -1,0 +1,33 @@
+ext {
+	minSdkVersion = 21
+	compileSdkVersion = 31
+	targetSdkVersion = 31
+
+	openpayPluginVersion = '1.0.3'
+
+}
+
+buildscript {
+	ext.kotlin_version = '1.5.31'
+	repositories {
+		google()
+		mavenCentral()
+		jcenter()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:7.0.4'
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+	}
+}
+
+allprojects {
+	repositories {
+		google()
+		mavenCentral()
+		jcenter()
+		maven {
+			url = "https://openpay-bank-plugin.s3.eu-west-1.amazonaws.com/maven/"
+		}
+	}
+}
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="16dp"
+		android:text="Demo Hosting App"
+		android:textColor="@color/white"
+		android:textSize="28sp" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:text="SCA Solution"
+		android:textColor="@color/white"
+		android:textSize="28sp"
+		android:textStyle="bold" />
+
+	<TextView
+		android:id="@+id/body"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="24dp"
+		android:layout_marginEnd="16dp"
+		android:text="This Panel simulates the SCA solution of the hosting app that is used to authorize the request made by the OpenPay Plug-in.\n\nThe pending request can be authorized or denied."
+		android:textColor="@color/white"
+		android:textSize="22sp" />
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginTop="32dp"
+		android:layout_marginEnd="16dp"
+		android:text="SIMULATE AUTHORIZATION" />
+
+	<Button
+		android:id="@+id/button2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:text="SIMULATE DENIAL" />
+
+	<Button
+		android:id="@+id/button3"
+		style="@style/Widget.MaterialComponents.Button.TextButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:layout_marginBottom="16dp"
+		android:text="CANCEL" />
+
+</LinearLayout>
